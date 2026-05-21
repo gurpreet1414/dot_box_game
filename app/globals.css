@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  min-height: 100%;
+  background: #08111f;
+}
+
+body {
+  min-height: 100vh;
+  color: #fff;
+  background: transparent;
+  font-family: 'Inter', sans-serif;
+}
+
+.theme-bg {
+  background:
+    linear-gradient(rgba(45, 212, 191, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(45, 212, 191, 0.07) 1px, transparent 1px),
+    radial-gradient(circle at 50% 0%, rgba(251, 191, 36, 0.14), transparent 34%),
+    linear-gradient(135deg, #08111f 0%, #111827 52%, #18212f 100%);
+  background-size: 34px 34px, 34px 34px, auto, auto;
+}
+
+.glass {
+  background: rgba(15, 23, 42, 0.86);
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.36), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(45, 212, 191, 0.18);
+  border-radius: 1rem;
+}
+
+.neon {
+  box-shadow: 0 0 0 1px rgba(45, 212, 191, 0.22), 0 0 28px rgba(45, 212, 191, 0.24);
+}
+
+.theme-input {
+  background: rgba(8, 17, 31, 0.78);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+  color: #f8fafc;
+}
+
+.theme-input:focus {
+  border-color: rgba(45, 212, 191, 0.75);
+  box-shadow: 0 0 0 3px rgba(45, 212, 191, 0.18);
+}
+
+.theme-button {
+  background: linear-gradient(135deg, #2dd4bf, #fbbf24);
+  color: #07111f;
+  box-shadow: 0 14px 35px rgba(45, 212, 191, 0.18);
+}
+
+.theme-button-secondary {
+  background: rgba(30, 41, 59, 0.86);
+  color: #e2e8f0;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.theme-button-secondary:hover {
+  background: rgba(51, 65, 85, 0.9);
+}
+
+.theme-chip {
+  background: rgba(8, 17, 31, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+}
+
+/* Animations */
+@keyframes boxFill {
+  0% { fill-opacity: 0; }
+  100% { fill-opacity: 0.7; }
+}
+
+.box-fill-animate {
+  animation: boxFill 0.5s ease-in;
+}
