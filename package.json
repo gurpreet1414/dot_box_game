@@ -7,7 +7,7 @@
     "dev": "ts-node --project tsconfig.server.json server/index.ts",
     "next:dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "node scripts/start-server.cjs",
     "lint": "next lint",
     "server": "ts-node --project tsconfig.server.json server/index.ts"
   },
@@ -25,12 +25,12 @@
     "socket.io": "^4.7.5",
     "socket.io-client": "^4.7.5",
     "tailwindcss": "^3.4.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3",
     "zustand": "^4.4.1"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
-    "eslint-config-next": "^15.5.18",
-    "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "eslint-config-next": "^15.5.18"
   }
 }
